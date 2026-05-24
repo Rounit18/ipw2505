@@ -1,0 +1,37 @@
+{
+  "source": "kagglehub",
+  "handle": "prathumarikeri/indian-sign-language-isl",
+  "raw_root": "data/raw/indian-sign-language-isl",
+  "raw_class_dir": "data/raw/indian-sign-language-isl/Indian",
+  "processed_dir": "data/isl_processed",
+  "augmented_dir": "data/isl_augmented",
+  "splits_dir": "data/splits",
+  "reports_dir": "ml/reports",
+  "train_csv": "data/splits/train.csv",
+  "val_csv": "data/splits/val.csv",
+  "test_csv": "data/splits/test.csv",
+  "train_with_augmented_csv": "data/splits/train_with_augmented.csv",
+  "expected_classes": 35,
+  "image_count_downloaded": 42745,
+  "prepared": true,
+  "prepared_on": "2026-05-21",
+  "processed_image_count": 42745,
+  "split_counts": {
+    "train": 29921,
+    "val": 6412,
+    "test": 6412
+  },
+  "augmentation_counts": {
+    "copies_per_image": 3,
+    "original_train_images": 29921,
+    "augmented_images": 89763,
+    "combined_train_images": 119684
+  },
+  "default_augment_copies": 3,
+  "split_ratios": {
+    "train": 0.7,
+    "val": 0.15,
+    "test": 0.15
+  },
+  "seed": 258
+}

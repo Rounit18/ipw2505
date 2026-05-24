@@ -1,0 +1,19 @@
+{
+  "dataset_config": "ml/configs/dataset_config.json",
+  "train_csv": "data/splits/train_with_augmented.csv",
+  "val_csv": "data/splits/val.csv",
+  "test_csv": "data/splits/test.csv",
+  "label_map": "ml/configs/label_map.json",
+  "model_output": "backend/models/isl_cnn.pth",
+  "reports_dir": "ml/reports",
+  "input_size": [64, 64],
+  "num_classes": 35,
+  "batch_size": 32,
+  "epochs": 30,
+  "learning_rate": 0.001,
+  "early_stopping_patience": 5,
+  "num_workers": 0,
+  "top_k": 3,
+  "min_recall_target": 0.85,
+  "device": "cuda"
+}

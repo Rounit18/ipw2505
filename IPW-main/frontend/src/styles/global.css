@@ -1,0 +1,283 @@
+:root {
+  color: #152018;
+  background: #eef3ef;
+  font-family: Inter, "Noto Sans", Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+button {
+  border: 1px solid #bfd0c4;
+  border-radius: 6px;
+  background: #ffffff;
+  color: #152018;
+  cursor: pointer;
+  padding: 0.55rem 0.75rem;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.app-shell {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.app-header {
+  align-items: start;
+  display: flex;
+  gap: 24px;
+  justify-content: space-between;
+}
+
+.app-header h1 {
+  font-size: 2.25rem;
+  line-height: 1;
+  margin: 0;
+}
+
+.eyebrow,
+.panel-label {
+  color: #527061;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  margin: 0 0 0.35rem;
+  text-transform: uppercase;
+}
+
+.settings-bar {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  justify-content: flex-end;
+}
+
+.settings-bar label {
+  align-items: center;
+  display: flex;
+  gap: 8px;
+}
+
+.inline-toggle {
+  background: #ffffff;
+  border: 1px solid #d3dfd7;
+  border-radius: 6px;
+  padding: 0.45rem 0.6rem;
+}
+
+.setting-value {
+  min-width: 3rem;
+  text-align: right;
+}
+
+.status-strip {
+  align-items: center;
+  background: #dfeae3;
+  border: 1px solid #cad9d0;
+  border-radius: 6px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 20px 0;
+  padding: 0.75rem 1rem;
+}
+
+.status-strip span {
+  background: rgba(255, 255, 255, 0.55);
+  border: 1px solid rgba(115, 142, 124, 0.3);
+  border-radius: 6px;
+  padding: 0.35rem 0.55rem;
+}
+
+.workspace-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: minmax(320px, 1fr) 420px;
+}
+
+.video-panel,
+.info-panel {
+  background: #ffffff;
+  border: 1px solid #d6e1da;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.video-frame {
+  align-items: center;
+  aspect-ratio: 4 / 3;
+  background: #18241c;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.webcam {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.guide-box {
+  border: 2px solid #eaf8ef;
+  border-radius: 8px;
+  height: 52%;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 42%;
+}
+
+.camera-disabled {
+  align-items: center;
+  background: rgba(24, 36, 28, 0.86);
+  bottom: 0;
+  color: #eaf8ef;
+  display: flex;
+  justify-content: center;
+  left: 0;
+  padding: 24px;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+}
+
+.panel-stack {
+  display: grid;
+  gap: 14px;
+}
+
+.gesture-display {
+  text-align: center;
+}
+
+.gesture-badge {
+  align-items: center;
+  background: #eff7f2;
+  border: 1px solid #c7dccf;
+  border-radius: 8px;
+  display: inline-flex;
+  font-size: 3rem;
+  font-weight: 800;
+  justify-content: center;
+  min-height: 96px;
+  min-width: 120px;
+  padding: 0.5rem 1rem;
+}
+
+.tone-success .gesture-badge {
+  background: #e6f6ec;
+  border-color: #96cfa9;
+}
+
+.tone-warning .gesture-badge {
+  background: #fff5dc;
+  border-color: #dfc57a;
+}
+
+.tone-danger .gesture-badge {
+  background: #ffe9e5;
+  border-color: #df9b8c;
+}
+
+.translation-row,
+.history-item,
+.panel-heading {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.translation-row {
+  border-top: 1px solid #edf2ee;
+  padding: 0.65rem 0;
+}
+
+.muted-row {
+  color: #607568;
+}
+
+.confidence-chip {
+  background: #edf5f0;
+  border: 1px solid #d3e3d8;
+  border-radius: 6px;
+  color: #365143;
+  font-size: 0.8rem;
+  font-weight: 700;
+  min-width: 3rem;
+  padding: 0.25rem 0.45rem;
+  text-align: center;
+}
+
+.current-token {
+  border-bottom: 1px solid #dce7e0;
+  font-size: 2rem;
+  font-weight: 800;
+  min-height: 56px;
+  overflow-wrap: anywhere;
+  padding: 0.35rem 0 0.75rem;
+}
+
+.button-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.button-row.compact {
+  margin-top: 0;
+}
+
+.history-list {
+  margin-top: 12px;
+  max-height: 180px;
+  overflow: auto;
+}
+
+.history-item {
+  border-top: 1px solid #edf2ee;
+  padding: 0.55rem 0;
+}
+
+.copy-error {
+  color: #9d3e32;
+  margin: 0.65rem 0 0;
+}
+
+@media (max-width: 900px) {
+  .app-header,
+  .workspace-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .app-header {
+    display: grid;
+  }
+
+  .settings-bar {
+    justify-content: flex-start;
+  }
+}

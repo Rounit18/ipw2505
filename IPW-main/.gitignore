@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+*.log
+
+backend/models/*.pth
+backend/models/*.pt
+
+data/
+ml/reports/
+
+frontend/node_modules/
+frontend/dist/

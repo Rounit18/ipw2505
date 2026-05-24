@@ -1,0 +1,10 @@
+{
+  "version": "rgb-64-lanczos-div255-chw-v1",
+  "image_size": [64, 64],
+  "color_mode": "RGB",
+  "resample": "LANCZOS",
+  "normalization": "divide_by_255",
+  "tensor_order": "CHW",
+  "dtype": "float32"
+}
+
